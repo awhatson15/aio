@@ -1,0 +1,30 @@
+# config.py
+
+# Основные параметры бота
+BOT_TOKEN = "7083144045:AAEGs07GeCVXeJgnVCz9ViBuIO3MQ_O4P1I"
+CHAT_ID = ""  # Добавляем идентификатор чата
+
+# Параметры стратегии (начальные значения)
+SETTINGS = {
+    "base_currency": "ZERC/USDT",
+    "price_diff_threshold": 0.05,  # 5%
+    "buy_discount": 0.30,  # 30%
+    "sell_threshold": 0.10,  # 10%
+    "check_interval": 10,  # Интервал проверки цен в секундах
+    "exchange1": "KuCoin",  # Первая биржа
+    "exchange2": "BitMart",  # Вторая биржа
+}
+
+# Биржи для работы
+EXCHANGES = {
+    "KuCoin": {
+        "api_key": "",
+        "api_secret": "",
+        "api_password": "",  # Если используется 2FA или пароль для API
+        "sandbox": True
+    },
+    "BitMart": {
+        "api_key": "",
+        "api_secret": "",
+    },
+}
